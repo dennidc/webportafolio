@@ -21,6 +21,7 @@
   max-width: 1300px;
   margin: auto;
 }
+
 .borde {
   border: 2px solid var(--oscuro);
   width: 10%;
@@ -346,10 +347,12 @@ main p {
 
 /* Responsive */
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .menu.ancho {
     flex-direction: column;
     align-items: flex-start;
+    max-width: 200px;
+    margin: auto;
   }
 
   .links {
@@ -361,5 +364,12 @@ main p {
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .menu {
+    max-width: 1200px;
+    margin: auto;
   }
 }
