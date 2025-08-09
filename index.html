@@ -15,12 +15,21 @@
     <link rel="icon" type="image/jpg" href="/CSS/imagenes/favicon-96x96.png"/>
   </head>
   <body>
-    <header>
-      <nav class="menu ancho">
-          <a class="wow animate__bounceIn logo" href="/index.html"><img
-            src="CSS/imagenes/Logo.png"
-            alt="logo_denni"/>Ing. Sistemas Computacionales
-          </a>
+    <header class="ancho">
+      <figure>
+
+        <a class="wow animate__bounceIn logo" href="/index.html"><img
+          src="CSS/imagenes/Logo.png"
+          alt="logo_denni"/><span>Ing. Sistemas Computacionales</span>
+        </a>
+
+        <div  class="burguer">
+          <i id="iconomenu" class="fa-solid fa-bars"></i>
+        </div>
+
+      </figure>
+
+      <nav class="menu">
         <ul class="animate__animated animate__flipInX links">
           <li><a href="#">INICIO</a></li>
           <span>|</span>
@@ -31,6 +40,7 @@
           <li><a href="sobreMi.html">SOBRE MÍ</a></li>
         </ul>
       </nav>
+
     </header>
 
     <section class="hero-section">
@@ -51,6 +61,7 @@
     <br /><br />
     <h2 class="titulos" id="project">PROYECTOS</h2>
     <hr class="borde" />
+
     <section class="proyectos">
       <br />
       <div class="cont_projects">
@@ -61,6 +72,7 @@
             <a href="#">VER</a>
           </div>
         </article>
+
         <div class="box wow animate__animated animate__bounceIn">
           <a href="#">HACKATHON 2.0 "Proyecto EJAD GLOBAL SOLUTIONS"</a>
           <div class="linea"></div>
@@ -199,8 +211,8 @@
 
     <div class="footer-social">
       <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-      <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-      <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/dennicen/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/dennidc" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
     </div>
   </div>
 
@@ -216,5 +228,6 @@
     <script>
       new WOW().init();
     </script>
+    <script src="Js/main.js"></script>
   </body>
 </html>

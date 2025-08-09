@@ -18,8 +18,18 @@
 }
 
 .ancho {
-  max-width: 1300px;
+  max-width: 1400px;
   margin: auto;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+}
+
+figure .logo{
+  width: auto;
+  height: auto;
+  padding: 10px;
 }
 
 .borde {
@@ -30,14 +40,11 @@
 .menu,
 .links {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  padding: 15px;
 }
 
 .links {
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 25px;
@@ -69,6 +76,10 @@
 }
 .logo img {
   width: 100px;
+}
+
+#iconomenu{
+    display: none;
 }
 
 .hero-section {
@@ -210,6 +221,8 @@
 /* sección de competencias */
 .compeContacto{
   display: flex;
+  justify-content: center;
+  gap: 100px;
 }
 
 .competencias-contacto {
@@ -253,7 +266,7 @@
 
 .circulo:hover {
   transform: scale(1.1);
-  background-color: var(--azul-claro);
+  background-color: var(--acento);
   color: var(--negro);
 }
 
@@ -262,7 +275,7 @@
   background-color: var(--gris-claro);
   padding: 50px 20px;
   text-align: center;
-  width: 45%;
+  /* width: 45%; */
   height:100%;
   border-radius: 4%;
 }
@@ -418,31 +431,80 @@ main p {
 
 /* Responsive */
 
-@media screen and (max-width: 768px) {
-  .menu.ancho {
+@media screen and (max-width: 1057px) {
+  header.ancho {
+    padding: 0.5rem 1rem;
+  }
+
+  figure {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .logo img {
+    height: 60px;
+    width: auto;
+  }
+
+  .burguer {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .menu {
+    display: none;
+    width: 100%;
+  }
+
+  .menu.activo {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 200px;
-    margin: auto;
+    background-color: #f8f8f8;
+    padding: 1rem;
   }
 
   .links {
     flex-direction: column;
-    align-items: flex-start;
     gap: 0.5rem;
   }
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+
+  .links span {
+    display: none;
   }
-  .compeContacto{
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
+  #iconomenu{
+    display: block;
   }
+  .hero-section {
+  max-width: 90%;
+  padding: 50px;
+}
+.compeContacto{
+  flex-direction: column-reverse;
+  align-items: center;
 }
 
+.overlay p {
+  max-width: 800px;
+  font-size: 15px;
+}
+.hero-section h1 {
+  font-size: 20px;
+}
+
+}
 @media screen and (max-width: 1500px) {
   .menu {
     max-width: 1200px;
