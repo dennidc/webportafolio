@@ -41,7 +41,7 @@ figure .logo{
 .links {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+/*   justify-content: space-between; */
 }
 
 .links {
@@ -429,6 +429,11 @@ main p {
   color: #ccc;
 }
 
+#CerrarMenu{
+  display: none;
+}
+
+
 /* Responsive */
 
 @media screen and (max-width: 1057px) {
@@ -463,28 +468,47 @@ main p {
     cursor: pointer;
   }
 
-  .menu {
-    display: none;
-    width: 100%;
-  }
 
-  .menu.activo {
+  .menu{
+    opacity: 0;
+    visibility: hidden;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    background-color: #f8f8f8;
-    padding: 1rem;
+    align-items: end;
+    position: absolute;
+    top: 0;
+    right:0;
+    z-index: 1000;
+    background-color: var(--oscuro);
+    padding: 2rem;
+    bottom: 0;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    gap:2rem;
   }
-
+  .menu.activo {
+    opacity: 1;
+    visibility: visible;
+  }
+  .menu i {
+    display: block;
+    font-size: 30px;
+    color: var(--blanco);
+    margin-bottom: 1rem;
+  }
   .links {
     flex-direction: column;
-    gap: 0.5rem;
+    align-items: end;
+  }
+  .links a {
+    font-size: 18px;
+    color: var(--blanco);
   }
 
   .links span {
     display: none;
   }
-  #iconomenu{
+
+  #iconomenu, #CerrarMenu{
     display: block;
   }
   .hero-section {
