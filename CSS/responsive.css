@@ -1,0 +1,105 @@
+/* Responsive */
+
+@media screen and (max-width: 1057px) {
+  header.ancho {
+    padding: 0.5rem 1rem;
+  }
+
+  figure {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+.info2{
+  top: 0;
+}
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .logo img {
+    height: 60px;
+    width: auto;
+  }
+
+  .burguer {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .menu{
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: absolute;
+    top: 0;
+    right:-5%;
+    height: 100vh;
+    z-index: 1000;
+    background-color: var(--oscuro);
+    padding: 2rem;
+    bottom: 0;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    gap:2rem;
+    transition: all 0.3s ease;
+  }
+  .menu.activo {
+    opacity: 1;
+    visibility: visible;
+  }
+  .menu i {
+    display: block;
+    font-size: 30px;
+    color: var(--blanco);
+    margin-bottom: 1rem;
+  }
+  .links {
+    flex-direction: column;
+    align-items: end;
+  }
+  .links a {
+    font-size: 18px;
+    color: var(--blanco);
+    text-decoration:dotted underline;
+  }
+
+  .links span {
+    display: none;
+  }
+
+  #iconomenu, #CerrarMenu{
+    display: block;
+  }
+  .hero-section {
+  max-width: 90%;
+  padding: 50px;
+}
+.compeContacto{
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.overlay p {
+  max-width: 800px;
+  font-size: 15px;
+}
+.hero-section h1 {
+  font-size: 20px;
+}
+
+}
+@media screen and (max-width: 1500px) {
+  .menu {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
