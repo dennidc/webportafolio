@@ -433,7 +433,7 @@ main p {
   display: none;
 }
 
-.flecha {
+#scrollTopBtn {
   display: flex;
   align-items: center;
   justify-content: center;
