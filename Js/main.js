@@ -6,11 +6,13 @@ const scrollTopBtn = document.getElementById('scrollTopBtn');
 // Abrir menú
 abrir.addEventListener('click', () => {
   nav.classList.add('activo');
+  document.body.classList.add('no-scroll');
 });
 
 // Cerrar menú con el botón de cerrar
 cerrar.addEventListener('click', () => {
   nav.classList.remove('activo');
+  document.body.classList.remove('no-scroll');
 });
 
 // Cerrar menú al dar clic en un enlace
@@ -28,6 +30,7 @@ document.addEventListener('click', (event) => {
     event.target !== abrir
   ) {
     nav.classList.remove('activo');
+    document.body.classList.remove('no-scroll'); // Habilita scroll
   }
 });
 

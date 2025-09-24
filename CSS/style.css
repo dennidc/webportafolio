@@ -78,7 +78,9 @@ figure .logo{
 .logo img {
   width: 100px;
 }
-
+.no-scroll {
+  overflow: hidden;
+}
 #iconomenu{
     display: none;
 }

@@ -1,6 +1,9 @@
 /* Responsive */
 
 @media screen and (max-width: 1057px) {
+  .no-scroll {
+  overflow: hidden;
+  }
   header.ancho {
     padding: 0.5rem 1rem;
   }
