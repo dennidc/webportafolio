@@ -5,48 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/animate.css">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <link rel="stylesheet" href="CSS/sobremiCSS.css">
+    <script src="https://kit.fontawesome.com/2ebd543e82.js" crossorigin="anonymous"></script>
     <title>Sobre Mí</title>
     <link rel="icon" type="image/jpg" href="/CSS/imagenes/favicon-96x96.png"/>
 </head>
 <body>
-<header>
-    <!-- NAV -->
-    <nav class="menu ancho">
+<header class="ancho">
+      <figure>
+
         <a class="wow animate__bounceIn logo" href="/index.html"><img
-            src="CSS/imagenes/Logo.png"
-            alt="logo_denni"/>Ing. Sistemas Computacionales
-          </a>
-        <ul class="links">
-            <li><a href="index.html">INICIO</a></li>
-            <span>|</span>
-            <li><a href="/index.html#project">PROYECTOS</a></li>
-            <span>|</span>
-            <li><a href="/index.html#compe">COMPETENCIAS</a></li>
-            <span>|</span>
-            <li><a href="sobreMi.html">SOBRE MÍ</a></li>
+          src="CSS/imagenes/Logo.png"
+          alt="logo_denni"/><span>Ing. Sistemas Computacionales</span>
+        </a>
+
+        <div  class="burguer">
+          <i id="iconomenu" class="fa-solid fa-bars"></i>
+        </div>
+      </figure>
+
+      <nav id="nav" class="menu">
+        <i id="CerrarMenu" class="fa-solid fa-xmark"></i>
+        <ul class="animate__animated animate__flipInX links">
+          <li><a href="#">INICIO</a></li>
+          <span>|</span>
+          <li><a href="#project">PROYECTOS</a></li>
+          <span>|</span>
+          <li><a href="#compe">COMPETENCIAS</a></li>
+          <span>|</span>
+          <li><a href="sobreMi.html">SOBRE MÍ</a></li>
         </ul>
-    </nav>
+      </nav>
+    </header>
 
-    <!-- CONTENIDO PRINCIPAL -->
-    <main>
-        <h2>Sobre Mí</h2>
-        <p>
-            ¡Hola! Soy Denni, estudiante de Ingeniería en Sistemas Computacionales con una gran pasión por el desarrollo web, la tecnología y la innovación.
-            Me gusta crear soluciones eficientes, intuitivas y visualmente atractivas para todo tipo de usuarios.
-        </p>
-
-        <p>
-            Me considero una persona autodidacta, curiosa y siempre dispuesta a aprender. Tengo experiencia tanto en frontend como en backend, utilizando tecnologías como HTML, CSS, JavaScript, Django y bases de datos como MySQL.
-        </p>
-
-        <p>
-            Mi objetivo es crecer como desarrollador, colaborar en proyectos desafiantes y seguir aportando con creatividad, responsabilidad y profesionalismo en todo lo que hago.
-        </p>
-    </main>
-
-    <!-- PIE DE PÁGINA -->
-    <footer>
-        &copy; 2025 Denni | Ing. Sistemas Computacionales
-    </footer>
+<script src="Js/main.js"></script>
 </body>
 </html>

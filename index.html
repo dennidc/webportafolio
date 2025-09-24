@@ -45,7 +45,7 @@
 
     </header>
 
-    <section class="hero-section">
+    <section class="hero-section filtro">
       <div class="overlay">
         <div class="wow animate__animated animate__slideInUp">
           <h1>Denni Abdiel Cen Cen</h1>
@@ -179,19 +179,19 @@
       <section class="contacto" id="contacto">
         <h3>Ponte en contacto conmigo</h3>
         <form class="formulario-contacto" action="#">
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" required>
+          <label for="nombre">Nombre <span class="obligado">*</span></label>
+          <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
 
-          <label for="Telefono">Celular:</label>
-          <input type="tel" id="number" name="number" required>
+          <label for="Telefono">Celular <span class="obligado">*</span></label>
+          <input type="tel" id="number" name="number" placeholder="+52 999-000-0000" required>
+          <label for="email">Email <span class="obligado">*</span></label>
+          <input type="email" id="email" name="email" placeholder="Email@gmail.com" required>
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
+          <label for="mensaje">Mensaje <span class="obligado">*</span></label>
+          <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje..."required></textarea>
 
-          <label for="mensaje">Mensaje:</label>
-          <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-
-          <input type="submit" value="Enviar">
+          <input type="submit" value="Contáctame">
+          <p>Campos obligatorios <span class="obligado">*</span></p>
         </form>
       </section>
 

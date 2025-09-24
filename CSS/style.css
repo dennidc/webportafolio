@@ -8,6 +8,7 @@
   --gris-claro: #f2f2f2;
   --azul-claro: #00bcd4;   /* Cian */
   --gris-texto: #555;
+  --rojo:#ff0101;
 }
 
 * {
@@ -84,13 +85,18 @@ figure .logo{
 
 .hero-section {
   position: relative;
-  background-image: url("imagenes/50.png");
+  background-image: url("imagenes/banner.png");
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   max-width: 1500px;
   height: 500px;
   margin: auto;
   padding: 50px;
+}
+.filtro {
+  background-color: rgba(0, 0, 0, 0.4); /* filtro oscuro */
+  background-blend-mode: darken;
 }
 .overlay {
   display: flex;
@@ -334,7 +340,13 @@ figure .logo{
 .formulario-contacto input[type="submit"]:hover {
   background-color: #e0484e;
 }
+input:focus::placeholder {
+  color: transparent;
+}
 
+.obligado{
+  color: var(--rojo);
+}
 
 /* sección sobre mí */
 main {
