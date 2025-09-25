@@ -1,80 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto: E-commerce</title>
-    <link rel="stylesheet" href="CSS/ecommerce.css">
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/responsive.css">
-    <link rel="icon" type="image/jpg" href="/CSS/imagenes/favicon-96x96.png"/>
-    <script src="https://kit.fontawesome.com/2ebd543e82.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto: E-commerce - La Casa del Aluminio</title>
+  <link rel="stylesheet" href="CSS/ecommerce.css">
+  <link rel="icon" type="image/png" href="CSS/imagenes/favicon-96x96.png"/>
+  <script src="https://kit.fontawesome.com/2ebd543e82.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="ancho">
-      <figure>
 
-        <a class="wow animate__bounceIn logo" href="/index.html"><img
-          src="CSS/imagenes/Logo.png"
-          alt="logo_denni"/><span>Ing. Sistemas Computacionales</span>
-        </a>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <a href="/index.html" class="logo">
+        <img src="CSS/imagenes/Logo.png" alt="logo_denni">
+        <span>Ing. Sistemas Computacionales</span>
+      </a>
 
-        <div  class="burguer">
-          <i id="iconomenu" class="fa-solid fa-bars"></i>
-        </div>
-      </figure>
-
-      <nav id="nav" class="menu">
-        <i id="CerrarMenu" class="fa-solid fa-xmark"></i>
-        <ul class="animate__animated animate__flipInX links">
-          <li><a href="index.html">INICIO</a></li>
-          <span>|</span>
-          <li><a href="index.html#project">PROYECTOS</a></li>
-          <span>|</span>
-          <li><a href="index.html#compe">COMPETENCIAS</a></li>
-          <span>|</span>
-          <li><a href="sobreMi.html">SOBRE MÍ</a></li>
+      <nav id="nav" class="nav">
+        <i id="CerrarMenu" class="fa-solid fa-xmark close"></i>
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="index.html#project">Proyectos</a></li>
+          <li><a href="index.html#compe">Competencias</a></li>
+          <li><a href="sobreMi.html">Sobre Mí</a></li>
         </ul>
       </nav>
-    </header>
-    <hr>
-    <section class="uno ancho">
-        <h1>E-commerce "La Casa Del Aluminio"</h1>
 
-        <figure class="principal">
-            <img src="CSS/imagenes/ecommerce/paginaprincipal.png" alt="pantalla principal del ecommerce">
-            <div class="texto">
-                <h2>La Página Principal de La Casa del Aluminio</h2>
-                    <br><br>
-                <p>
-                    Esta es la página principal del sitio web <strong>"La Casa del Aluminio"</strong>. Al ingresar, los usuarios son recibidos con un banner de bienvenida que resalta el lema de la marca: <strong>"Ofrecemos productos de alta calidad"</strong>.
-                </p>
-                    <br>
-                <h3>Navegación y Características Clave</h3>
-                <br>
-                <p>La navegación es intuitiva y se encuentra en la parte superior. Las opciones del menú permiten a los usuarios:</p><br>
-                    <ul>
-                        <li><strong>Buscar:</strong> Un campo de búsqueda para encontrar productos específicos.</li>
-                        <li><strong>Productos:</strong> Ver el catálogo completo.</li>
-                        <li>
-                            <strong>Contacto:</strong> Encontrar información para comunicarse con la empresa.
-                        </li>
-                        <li><strong>Carrito:</strong> Gestionar sus compras y el proceso de pago.</li>
-                        <li>
-                            <strong></strong>Mi Cuenta: Acceder a su perfil de usuario.
-                        </li>
-                        <li><strong>Cerrar sesión:</strong> Salir de su cuenta.</li>
-                    </ul>
-                    <br>
-                    <h3>Contenido Destacado</h3>
-                    <br>
-                <p>
-                    La página está organizada para guiar al usuario a través del catálogo. Debajo del banner de bienvenida, hay una sección que muestra los diversos productos disponibles, cada uno con una imagen, nombre y precio. Esta disposición facilita la exploración y selección de productos.
-                </p>
-            </div>
-        </figure>
+      <div class="burger" id="iconomenu">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN SECTION -->
+  <main class="main">
+    <section class="intro container">
+      <h1>E-commerce: <span>La Casa Del Aluminio</span></h1>
+
+      <div class="presentation">
+        <img src="CSS/imagenes/ecommerce/paginaprincipal.png" alt="pantalla principal del ecommerce" class="preview">
+
+        <div class="text-content">
+          <h2>Página Principal</h2>
+          <p>
+            Esta es la página principal del sitio web <strong>"La Casa del Aluminio"</strong>. Al ingresar, los usuarios son recibidos con un banner de bienvenida que resalta el lema de la marca: <strong>"Ofrecemos productos de alta calidad"</strong>.
+          </p>
+
+          <h3>Navegación y Características Clave</h3>
+          <p>La navegación es intuitiva y permite a los usuarios:</p>
+          <ul>
+            <li><strong>Buscar:</strong> Encontrar productos específicos.</li>
+            <li><strong>Productos:</strong> Explorar el catálogo completo.</li>
+            <li><strong>Contacto:</strong> Acceder a la información de contacto.</li>
+            <li><strong>Carrito:</strong> Gestionar compras y pagos.</li>
+            <li><strong>Mi Cuenta:</strong> Acceder a su perfil.</li>
+            <li><strong>Cerrar sesión:</strong> Finalizar su sesión.</li>
+          </ul>
+
+          <h3>Contenido Destacado</h3>
+          <p>
+            La página está organizada para guiar al usuario a través del catálogo. Debajo del banner, se muestra una galería con los productos disponibles, cada uno con su imagen, nombre y precio, facilitando la experiencia de compra.
+          </p>
+        </div>
+      </div>
     </section>
+  </main>
 
-    <script src="Js/main.js"></script>
+  <script src="Js/main.js"></script>
 </body>
 </html>
