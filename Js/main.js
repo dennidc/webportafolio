@@ -30,7 +30,7 @@ document.addEventListener('click', (event) => {
     event.target !== abrir
   ) {
     nav.classList.remove('activo');
-    document.body.classList.remove('no-scroll'); // Habilita scroll
+    document.body.classList.remove('no-scroll');
   }
 });
 
@@ -38,6 +38,6 @@ document.addEventListener('click', (event) => {
 scrollTopBtn.addEventListener('click', () => {
   window.scrollTo({
     top: 0,
-    behavior: 'smooth' // Hace el desplazamiento suave
+    behavior: 'smooth'
   });
 });

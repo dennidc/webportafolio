@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-  --oscuro: #1f2c34;      /* Azul petróleo */
+  --oscuro: #1f2c34;
   --blanco: #ffffff;
   --negro: #000000;
-  --acento: #ff5a5f;       /* Coral oscuro */
+  --acento: #ff5a5f;
   --gris-claro: #f2f2f2;
-  --azul-claro: #00bcd4;   /* Cian */
+  --azul-claro: #00bcd4;
   --gris-texto: #555;
   --rojo:#ff0101;
 }
@@ -42,7 +42,6 @@ figure .logo{
 .links {
   display: flex;
   flex-direction: row;
-/*   justify-content: space-between; */
 }
 
 .links {
@@ -97,14 +96,14 @@ figure .logo{
   padding: 50px;
 }
 .filtro {
-  background-color: rgba(0, 0, 0, 0.4); /* filtro oscuro */
+  background-color: rgba(0, 0, 0, 0.4);
   background-blend-mode: darken;
 }
 .overlay {
   display: flex;
   flex-direction: column;
   padding: 20px 20px;
-  background-color: rgba(31, 44, 52, 0.5); /* match oscuro transparente */
+  background-color: rgba(31, 44, 52, 0.5);
   gap: 20px;
   color: var(--blanco);
 }
