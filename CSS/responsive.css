@@ -1,3 +1,4 @@
+@value --oscuro from 'CSS/style.css';
 /* Responsive */
 
 @media screen and (max-width: 1057px) {
@@ -52,6 +53,7 @@
     padding: 2rem;
     bottom: 0;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    background-color: var(--oscuro);
     gap:2rem;
     transition: all 0.3s ease;
   }

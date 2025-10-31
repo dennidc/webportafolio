@@ -5,35 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Proyecto: E-commerce - La Casa del Aluminio</title>
   <link rel="stylesheet" href="CSS/ecommerce.css">
+  <link rel="stylesheet" href="CSS/style.css">
   <link rel="icon" type="image/png" href="CSS/imagenes/favicon-96x96.png"/>
   <script src="https://kit.fontawesome.com/2ebd543e82.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/responsive.css">
 </head>
 <body>
 
   <!-- HEADER -->
-  <header class="header">
-    <div class="container">
-      <a href="/index.html" class="logo">
-        <img src="CSS/imagenes/Logo.png" alt="logo_denni">
-        <span>Ing. Sistemas Computacionales</span>
-      </a>
+    <header class="ancho">
+      <figure>
 
-      <nav id="nav" class="nav">
-        <i id="CerrarMenu" class="fa-solid fa-xmark close"></i>
-        <ul class="nav-links">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="index.html#project">Proyectos</a></li>
-          <li><a href="index.html#compe">Competencias</a></li>
-          <li><a href="sobreMi.html">Sobre Mí</a></li>
+        <a class="wow animate__bounceIn logo" href="/index.html"><img
+          src="CSS/imagenes/Logo.png"
+          alt="logo_denni"/><span>Ing. Sistemas Computacionales</span>
+        </a>
+
+        <div  class="burguer">
+          <i id="iconomenu" class="fa-solid fa-bars"></i>
+        </div>
+
+      </figure>
+
+      <nav id="nav" class="menu">
+        <i id="CerrarMenu" class="fa-solid fa-xmark"></i>
+        <ul class="animate__animated animate__flipInX links">
+          <li><a href="#">INICIO</a></li>
+          <span>|</span>
+          <li><a href="#project">PROYECTOS</a></li>
+          <span>|</span>
+          <li><a href="#compe">COMPETENCIAS</a></li>
+          <span>|</span>
+          <li><a href="sobreMi.html">SOBRE MÍ</a></li>
         </ul>
       </nav>
 
-      <div class="burger" id="iconomenu">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-    </div>
-  </header>
+    </header>
 
   <!-- MAIN SECTION -->
   <main class="main">
